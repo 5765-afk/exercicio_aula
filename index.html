@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistência Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="formulario">
+
+        <h1>Assistência Informática</h1>
+
+        <p>Comunicação de avarias nas salas da escola</p>
+
+        <form action="/pedidos" method="POST">
+
+            <label for="sala">Sala</label>
+            <input
+                    type="text"
+                    id="sala"
+                    name="sala"
+                    placeholder="Exemplo: B12">
+
+            <label for="tipo">Tipo de avaria</label>
+
+            <select id="tipo" name="tipo">
+                <option value="">Seleciona uma opção</option>
+                <option value="Equipamento">Equipamento</option>
+                <option value="Software">Software</option>
+                <option value="Rede">Rede</option>
+            </select>
+
+            <label for="descricao">Descrição da avaria</label>
+
+            <textarea
+                    id="descricao"
+                    name="descricao"
+                    rows="5"
+                    placeholder="Descreve o problema..."></textarea>
+
+            <button type="submit">Enviar pedido</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
